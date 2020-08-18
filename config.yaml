@@ -1,0 +1,24 @@
+dryrun: False
+input_mean: [0.485, 0.456, 0.406]
+input_std: [0.229, 0.224, 0.225]
+img_height: 512
+img_width: 512
+base_model: "efficientnet-b6"
+train_folder: "data/train_images"
+test_folder: "data/test_images"
+device: "cuda"
+n_jobs: 6
+weights_folder: "weights"
+log_folder: "logs"
+subs_folder: "subs"
+train:
+  epochs: 50
+  batch_size: 8
+  base_lr: 0.0001
+  csv_file: "data/train_folds5.csv"
+  folds: [0, 2, 3, 4]
+valid:
+  folds: [5]
+test:
+  batch_size: 16
+  csv_file: "data/test.csv"

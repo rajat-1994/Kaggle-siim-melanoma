@@ -13,7 +13,6 @@ This repo contains my code for training classification model for kaggle recently
 # Project Structure
 [(top)](#table-of-contents)
 
-    ```
     ./
     ├── config.yaml
     ├── data
@@ -33,7 +32,7 @@ This repo contains my code for training classification model for kaggle recently
     │   └── utils.py
     ├── subs
     └── weights
-    ```
+
 
 # Installation
 [(top)](#table-of-contents)
@@ -45,7 +44,7 @@ This repo contains my code for training classification model for kaggle recently
     pip install -r requirements.txt
     ```
 
-2. Download the dataset(jpeg folder) and zip it in *data* folder from [kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification/data).After downloading *data* folder should look like this
+2. Download the dataset(jpeg folder) and zip it in *data* folder from [kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification/data). After downloading *data* folder should look like this
 
     ```
     data/
@@ -64,9 +63,12 @@ This repo contains my code for training classification model for kaggle recently
 
     ```python create_folds.py```
 
-2. Resize images. Original images are quite large so loading large images while training will slow training. So resize dataset to smaller size (384,512,1024 etc.) by change *resize_data.py* and then run
+2. Resize images. Original images are quite large so loading large images while training will slow training. So resize dataset to smaller size (384,512,1024 etc.) by     change *resize_data.py* and then run
 
     ```python resize_data.py```
+
+    This will create two folders *train_image* and *test_images* in the *data* folder containing training image and testing images respectively.
+
 
 3. Start training
 
