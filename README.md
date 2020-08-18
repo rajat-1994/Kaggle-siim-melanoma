@@ -35,7 +35,7 @@ This repo contains my code for training classification model for kaggle recently
 
 # Installation
 [(top)](#table-of-contents)
-1. Setup virtual environment(using conda or venv).
+1. Setup virtual environment(using conda or virtualenv).
 
     ```
     conda create -n kaggle python=3.7
